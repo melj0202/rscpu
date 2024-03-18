@@ -1,0 +1,3051 @@
+Username:  jaskulr
+Date:      Wed May 3 03:07:20 EDT 2023
+ 
+*** compiling ***
+--- running ---
+ 
+Name: Ryan Jaskulski
+Description: rscpue with 1KB direct-mapped, write through, write allocate cache.
+
+Enter the name of the file:  The program located at /home/mathcs/turnin/bracken/cs330/test.0 has been properly opened; Dumping source to memory
+Memory has been initalized
+Initalizing the cache...
+Dumping source to memory
+End of file reached... BEGIN EXECUTION.
+BEGIN
+fetch 1: AR = 0 and PC = 0
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+fetch 2: DR = 0 and PC = 1
+fetch 3: IR = 0 and AR = 1
+NOP instruction
+Instruction execution complete: AC = 0 AC8 = 0 R = 0 R8 = 0 flag = 0 AR = 1 PC = 1 DR = 0
+
+number of hits = 0
+number of misses = 1
+fetch 1: AR = 1 and PC = 1
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+Cache Hit
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+fetch 2: DR = 11 and PC = 2
+fetch 3: IR = 11 and AR = 2
+CLAC instruction
+CLAC1: AC8 = 0 AC = 0 flag = 1
+Instruction execution complete: AC = 0 AC8 = 0 R = 0 R8 = 0 flag = 1 AR = 2 PC = 2 DR = 11
+
+number of hits = 1
+number of misses = 1
+fetch 1: AR = 2 and PC = 2
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+Cache Hit
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+fetch 2: DR = 10 and PC = 3
+fetch 3: IR = 10 and AR = 3
+INAC instruction
+INAC1: AC8 = 1 AC = 1 flag = 0
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 3 PC = 3 DR = 10
+
+number of hits = 2
+number of misses = 1
+fetch 1: AR = 3 and PC = 3
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+Cache Hit
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+fetch 2: DR = 2 and PC = 4
+fetch 3: IR = 2 and AR = 4
+STAC instruction
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+STAC1: DR = 32 PC = 5 AR = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+STAC2: TR = 32 DR = 0 AR = 5 PC = 6
+STAC3: AR = 8192
+STAC4: DR = 1
+STAC5 before store: AR = 8192 M[8192] = 0
+AR being sought from the cache = 8192
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 11 10 2
+AR being sought from the cache = 8192
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 8 data = 0 0 0 0
+Cache entry after being written to...
+entry 0 tag = 8 data = 1 0 0 0
+STAC5 after store: AR = 8192 M[8192] = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 8192 PC = 6 DR = 1
+
+number of hits = 4
+number of misses = 2
+fetch 1: AR = 6 and PC = 6
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+fetch 2: DR = 0 and PC = 7
+fetch 3: IR = 0 and AR = 7
+NOP instruction
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 7 PC = 7 DR = 0
+
+number of hits = 5
+number of misses = 2
+fetch 1: AR = 7 and PC = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 32 0 0 255
+fetch 2: DR = 255 and PC = 8
+fetch 3: IR = 255 and AR = 8
+HALT instruction; STOP EXECUTION
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 8 PC = 8 DR = 255
+
+number of hits = 6
+number of misses = 2
+--- Running again ---
+ 
+Name: Ryan Jaskulski
+Description: rscpue with 1KB direct-mapped, write through, write allocate cache.
+
+Enter the name of the file:  The program located at /home/mathcs/turnin/bracken/cs330/test.c1 has been properly opened; Dumping source to memory
+Memory has been initalized
+Initalizing the cache...
+Dumping source to memory
+End of file reached... BEGIN EXECUTION.
+BEGIN
+fetch 1: AR = 0 and PC = 0
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+fetch 2: DR = 0 and PC = 1
+fetch 3: IR = 0 and AR = 1
+NOP instruction
+Instruction execution complete: AC = 0 AC8 = 0 R = 0 R8 = 0 flag = 0 AR = 1 PC = 1 DR = 0
+
+number of hits = 0
+number of misses = 1
+fetch 1: AR = 1 and PC = 1
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+Cache Hit
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+fetch 2: DR = 139 and PC = 2
+fetch 3: IR = 139 and AR = 2
+CLAC16 instruction
+CLAC16_1: AC = 0AC8 = 0 flag = 1
+Instruction execution complete: AC = 0 AC8 = 0 R = 0 R8 = 0 flag = 1 AR = 2 PC = 2 DR = 139
+
+number of hits = 1
+number of misses = 1
+fetch 1: AR = 2 and PC = 2
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+Cache Hit
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+fetch 2: DR = 138 and PC = 3
+fetch 3: IR = 138 and AR = 3
+INAC16 instruction
+INAC16_1: AC = 1 AC8 = 1 flag = 0
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 3 PC = 3 DR = 138
+
+number of hits = 2
+number of misses = 1
+fetch 1: AR = 3 and PC = 3
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+Cache Hit
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 139 138 130
+fetch 2: DR = 130 and PC = 4
+fetch 3: IR = 130 and AR = 4
+STAC16 instruction
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+STAC16_1: DR = 36 PC = 5 AR = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+STAC16_2: TR = 36 DR = 64 AR = 5 PC = 6
+STAC16_3: AR = 9280
+STAC16_4: DR = 0
+STAC16_5 before store of high order: AR = 9280 M[9280] = 0
+AR being sought from the cache = 9280
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 255 data = 0 0 0 0
+AR being sought from the cache = 9280
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 9 data = 0 0 0 0
+Cache entry after being written to...
+entry 16 tag = 9 data = 0 0 0 0
+STAC16_5 after store of high order: AR = 9280 M[9280] = 0
+STAC16_6: AC8 = 1 DR = 1
+STAC16_7 before store of low order: AR = 9281 M[9281] = 0
+AR being sought from the cache = 9281
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 9 data = 0 0 0 0
+AR being sought from the cache = 9281
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 9 data = 0 0 0 0
+Cache entry after being written to...
+entry 16 tag = 9 data = 0 1 0 0
+STAC16_7 after store of low order: AR = 9281 M[9281] = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 9281 PC = 6 DR = 1
+
+number of hits = 4
+number of misses = 2
+fetch 1: AR = 6 and PC = 6
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+fetch 2: DR = 139 and PC = 7
+fetch 3: IR = 139 and AR = 7
+CLAC16 instruction
+CLAC16_1: AC = 0AC8 = 0 flag = 1
+Instruction execution complete: AC = 0 AC8 = 0 R = 0 R8 = 0 flag = 1 AR = 7 PC = 7 DR = 139
+
+number of hits = 5
+number of misses = 2
+fetch 1: AR = 7 and PC = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 36 64 139 129
+fetch 2: DR = 129 and PC = 8
+fetch 3: IR = 129 and AR = 8
+LDAC16 instruction
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+LDAC16_1: DR = 36 PC = 9 AR = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+LDAC16_2: TR = 36 DR = 64 AR = 9 PC = 10
+LDAC16_3: AR = 9280
+AR being sought from the cache = 9280
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 9 data = 0 1 0 0
+Cache Hit
+AR being sought from the cache = 9280
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 9 data = 0 1 0 0
+LDAC16_4: DR = 0
+LDAC16_5: AC = 0
+AR being sought from the cache = 9281
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 9 data = 0 1 0 0
+Cache Hit
+AR being sought from the cache = 9281
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 9 data = 0 1 0 0
+LDAC16_6: DR = 1 AR = 9281
+LDAC16_7: AC8 = 1 AC = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 1 AR = 9281 PC = 10 DR = 1
+
+number of hits = 9
+number of misses = 3
+fetch 1: AR = 10 and PC = 10
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+fetch 2: DR = 0 and PC = 11
+fetch 3: IR = 0 and AR = 11
+NOP instruction
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 1 AR = 11 PC = 11 DR = 0
+
+number of hits = 10
+number of misses = 3
+fetch 1: AR = 11 and PC = 11
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 36 64 0 255
+fetch 2: DR = 255 and PC = 12
+fetch 3: IR = 255 and AR = 12
+HALT instruction; STOP EXECUTION
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 1 AR = 12 PC = 12 DR = 255
+
+number of hits = 11
+number of misses = 3
+--- runnning again---
+ 
+Name: Ryan Jaskulski
+Description: rscpue with 1KB direct-mapped, write through, write allocate cache.
+
+Enter the name of the file:  The program located at /home/mathcs/turnin/bracken/cs330/test.c2 has been properly opened; Dumping source to memory
+Memory has been initalized
+Initalizing the cache...
+Dumping source to memory
+End of file reached... BEGIN EXECUTION.
+BEGIN
+fetch 1: AR = 0 and PC = 0
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+fetch 2: DR = 22 and PC = 1
+fetch 3: IR = 22 and AR = 1
+MVI instruction
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+Cache Hit
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+MVI1: DR = 1 PC = 2 AR = 2
+MVI2: AC8 = 1 AC = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 2 PC = 2 DR = 1
+
+number of hits = 1
+number of misses = 1
+fetch 1: AR = 2 and PC = 2
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+Cache Hit
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+fetch 2: DR = 3 and PC = 3
+fetch 3: IR = 3 and AR = 3
+MVAC instruction
+MVAC1: R8 = 1R = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 1 R8 = 1 flag = 0 AR = 3 PC = 3 DR = 3
+
+number of hits = 2
+number of misses = 1
+fetch 1: AR = 3 and PC = 3
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+Cache Hit
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 22 1 3 22
+fetch 2: DR = 22 and PC = 4
+fetch 3: IR = 22 and AR = 4
+MVI instruction
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+MVI1: DR = 5 PC = 5 AR = 5
+MVI2: AC8 = 5 AC = 5
+Instruction execution complete: AC = 5 AC8 = 5 R = 1 R8 = 1 flag = 0 AR = 5 PC = 5 DR = 5
+
+number of hits = 3
+number of misses = 2
+fetch 1: AR = 5 and PC = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+fetch 2: DR = 2 and PC = 6
+fetch 3: IR = 2 and AR = 6
+STAC instruction
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC1: DR = 32 PC = 7 AR = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC3: AR = 8256
+STAC4: DR = 5
+STAC5 before store: AR = 8256 M[8256] = 0
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 255 data = 0 0 0 0
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 0 0 0 0
+Cache entry after being written to...
+entry 16 tag = 8 data = 5 0 0 0
+STAC5 after store: AR = 8256 M[8256] = 5
+Instruction execution complete: AC = 5 AC8 = 5 R = 1 R8 = 1 flag = 0 AR = 8256 PC = 8 DR = 5
+
+number of hits = 6
+number of misses = 2
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 9 and PC = 9
+fetch 3: IR = 9 and AR = 9
+SUB instruction
+SUB1 AC8 = 4 AC = 4 flags = 2
+Instruction execution complete: AC = 4 AC8 = 4 R = 1 R8 = 1 flag = 2 AR = 9 PC = 9 DR = 9
+
+number of hits = 6
+number of misses = 3
+fetch 1: AR = 9 and PC = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 7 and PC = 10
+fetch 3: IR = 7 and AR = 10
+JPNZ instruction
+JUMP instruction
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ1: DR = 0 PC = 10 AR = 11
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ2: TR = 0 DR = 5 AR = 11 PC = 10
+JPNZ3: AR = 5
+JPNZ4 before PC overwrite: AR = 5PC = 10
+JPNZ4 after PC overwrite: AR = 5PC = 5
+Instruction execution complete: AC = 4 AC8 = 4 R = 1 R8 = 1 flag = 2 AR = 5 PC = 5 DR = 5
+
+number of hits = 9
+number of misses = 3
+fetch 1: AR = 5 and PC = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+fetch 2: DR = 2 and PC = 6
+fetch 3: IR = 2 and AR = 6
+STAC instruction
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC1: DR = 32 PC = 7 AR = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC3: AR = 8256
+STAC4: DR = 4
+STAC5 before store: AR = 8256 M[8256] = 5
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 5 0 0 0
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 5 0 0 0
+Cache entry after being written to...
+entry 16 tag = 8 data = 4 0 0 0
+STAC5 after store: AR = 8256 M[8256] = 4
+Instruction execution complete: AC = 4 AC8 = 4 R = 1 R8 = 1 flag = 2 AR = 8256 PC = 8 DR = 4
+
+number of hits = 12
+number of misses = 3
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 9 and PC = 9
+fetch 3: IR = 9 and AR = 9
+SUB instruction
+SUB1 AC8 = 3 AC = 3 flags = 2
+Instruction execution complete: AC = 3 AC8 = 3 R = 1 R8 = 1 flag = 2 AR = 9 PC = 9 DR = 9
+
+number of hits = 13
+number of misses = 3
+fetch 1: AR = 9 and PC = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 7 and PC = 10
+fetch 3: IR = 7 and AR = 10
+JPNZ instruction
+JUMP instruction
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ1: DR = 0 PC = 10 AR = 11
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ2: TR = 0 DR = 5 AR = 11 PC = 10
+JPNZ3: AR = 5
+JPNZ4 before PC overwrite: AR = 5PC = 10
+JPNZ4 after PC overwrite: AR = 5PC = 5
+Instruction execution complete: AC = 3 AC8 = 3 R = 1 R8 = 1 flag = 2 AR = 5 PC = 5 DR = 5
+
+number of hits = 16
+number of misses = 3
+fetch 1: AR = 5 and PC = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+fetch 2: DR = 2 and PC = 6
+fetch 3: IR = 2 and AR = 6
+STAC instruction
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC1: DR = 32 PC = 7 AR = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC3: AR = 8256
+STAC4: DR = 3
+STAC5 before store: AR = 8256 M[8256] = 4
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 4 0 0 0
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 4 0 0 0
+Cache entry after being written to...
+entry 16 tag = 8 data = 3 0 0 0
+STAC5 after store: AR = 8256 M[8256] = 3
+Instruction execution complete: AC = 3 AC8 = 3 R = 1 R8 = 1 flag = 2 AR = 8256 PC = 8 DR = 3
+
+number of hits = 19
+number of misses = 3
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 9 and PC = 9
+fetch 3: IR = 9 and AR = 9
+SUB instruction
+SUB1 AC8 = 2 AC = 2 flags = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 1 R8 = 1 flag = 2 AR = 9 PC = 9 DR = 9
+
+number of hits = 20
+number of misses = 3
+fetch 1: AR = 9 and PC = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 7 and PC = 10
+fetch 3: IR = 7 and AR = 10
+JPNZ instruction
+JUMP instruction
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ1: DR = 0 PC = 10 AR = 11
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ2: TR = 0 DR = 5 AR = 11 PC = 10
+JPNZ3: AR = 5
+JPNZ4 before PC overwrite: AR = 5PC = 10
+JPNZ4 after PC overwrite: AR = 5PC = 5
+Instruction execution complete: AC = 2 AC8 = 2 R = 1 R8 = 1 flag = 2 AR = 5 PC = 5 DR = 5
+
+number of hits = 23
+number of misses = 3
+fetch 1: AR = 5 and PC = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+fetch 2: DR = 2 and PC = 6
+fetch 3: IR = 2 and AR = 6
+STAC instruction
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC1: DR = 32 PC = 7 AR = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC3: AR = 8256
+STAC4: DR = 2
+STAC5 before store: AR = 8256 M[8256] = 3
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 3 0 0 0
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 3 0 0 0
+Cache entry after being written to...
+entry 16 tag = 8 data = 2 0 0 0
+STAC5 after store: AR = 8256 M[8256] = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 1 R8 = 1 flag = 2 AR = 8256 PC = 8 DR = 2
+
+number of hits = 26
+number of misses = 3
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 9 and PC = 9
+fetch 3: IR = 9 and AR = 9
+SUB instruction
+SUB1 AC8 = 1 AC = 1 flags = 2
+Instruction execution complete: AC = 1 AC8 = 1 R = 1 R8 = 1 flag = 2 AR = 9 PC = 9 DR = 9
+
+number of hits = 27
+number of misses = 3
+fetch 1: AR = 9 and PC = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 7 and PC = 10
+fetch 3: IR = 7 and AR = 10
+JPNZ instruction
+JUMP instruction
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ1: DR = 0 PC = 10 AR = 11
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+JPNZ2: TR = 0 DR = 5 AR = 11 PC = 10
+JPNZ3: AR = 5
+JPNZ4 before PC overwrite: AR = 5PC = 10
+JPNZ4 after PC overwrite: AR = 5PC = 5
+Instruction execution complete: AC = 1 AC8 = 1 R = 1 R8 = 1 flag = 2 AR = 5 PC = 5 DR = 5
+
+number of hits = 30
+number of misses = 3
+fetch 1: AR = 5 and PC = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+fetch 2: DR = 2 and PC = 6
+fetch 3: IR = 2 and AR = 6
+STAC instruction
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC1: DR = 32 PC = 7 AR = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 5 2 32 64
+STAC2: TR = 32 DR = 64 AR = 7 PC = 8
+STAC3: AR = 8256
+STAC4: DR = 1
+STAC5 before store: AR = 8256 M[8256] = 2
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 2 0 0 0
+AR being sought from the cache = 8256
+The main memory block number = 16
+The cache line associated with AR = 16
+entry 16 tag = 8 data = 2 0 0 0
+Cache entry after being written to...
+entry 16 tag = 8 data = 1 0 0 0
+STAC5 after store: AR = 8256 M[8256] = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 1 R8 = 1 flag = 2 AR = 8256 PC = 8 DR = 1
+
+number of hits = 33
+number of misses = 3
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 9 and PC = 9
+fetch 3: IR = 9 and AR = 9
+SUB instruction
+SUB1 AC8 = 0 AC = 0 flags = 3
+Instruction execution complete: AC = 0 AC8 = 0 R = 1 R8 = 1 flag = 3 AR = 9 PC = 9 DR = 9
+
+number of hits = 34
+number of misses = 3
+fetch 1: AR = 9 and PC = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 9 7 0 5
+fetch 2: DR = 7 and PC = 10
+fetch 3: IR = 7 and AR = 10
+JPNZ instruction
+JPNZ1 PC = 11
+JPNZ2 PC = 12
+Instruction execution complete: AC = 0 AC8 = 0 R = 1 R8 = 1 flag = 3 AR = 10 PC = 12 DR = 7
+
+number of hits = 35
+number of misses = 3
+fetch 1: AR = 12 and PC = 12
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 255 0 0 0
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 255 0 0 0
+fetch 2: DR = 255 and PC = 13
+fetch 3: IR = 255 and AR = 13
+HALT instruction; STOP EXECUTION
+Instruction execution complete: AC = 0 AC8 = 0 R = 1 R8 = 1 flag = 3 AR = 13 PC = 13 DR = 255
+
+number of hits = 35
+number of misses = 4
+--- running again---
+ 
+Name: Ryan Jaskulski
+Description: rscpue with 1KB direct-mapped, write through, write allocate cache.
+
+Enter the name of the file:  The program located at /home/mathcs/turnin/bracken/cs330/test.c3 has been properly opened; Dumping source to memory
+Memory has been initalized
+Initalizing the cache...
+Dumping source to memory
+End of file reached... BEGIN EXECUTION.
+BEGIN
+fetch 1: AR = 0 and PC = 0
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+fetch 2: DR = 150 and PC = 1
+fetch 3: IR = 150 and AR = 1
+MVI16 instruction
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+Cache Hit
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+MVI16_1: DR = 0 PC = 2 AR = 2
+MVI16_2: AC = 0
+MVI16_3: AC = 0
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+Cache Hit
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+MVI16_4: DR = 1 PC = 3 AR = 3
+MVI16_5: AC8 = 1
+MVI16_6: AC = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 3 PC = 3 DR = 1
+
+number of hits = 2
+number of misses = 1
+fetch 1: AR = 3 and PC = 3
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+Cache Hit
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+fetch 2: DR = 130 and PC = 4
+fetch 3: IR = 130 and AR = 4
+STAC16 instruction
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+STAC16_1: DR = 4 PC = 5 AR = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+STAC16_2: TR = 4 DR = 0 AR = 5 PC = 6
+STAC16_3: AR = 1024
+STAC16_4: DR = 0
+STAC16_5 before store of high order: AR = 1024 M[1024] = 0
+AR being sought from the cache = 1024
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 0 1 130
+AR being sought from the cache = 1024
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 1 data = 0 0 0 0
+Cache entry after being written to...
+entry 0 tag = 1 data = 0 0 0 0
+STAC16_5 after store of high order: AR = 1024 M[1024] = 0
+STAC16_6: AC8 = 1 DR = 1
+STAC16_7 before store of low order: AR = 1025 M[1025] = 0
+AR being sought from the cache = 1025
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 1 data = 0 0 0 0
+AR being sought from the cache = 1025
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 1 data = 0 0 0 0
+Cache entry after being written to...
+entry 0 tag = 1 data = 0 1 0 0
+STAC16_7 after store of low order: AR = 1025 M[1025] = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 1025 PC = 6 DR = 1
+
+number of hits = 4
+number of misses = 2
+fetch 1: AR = 6 and PC = 6
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+fetch 2: DR = 138 and PC = 7
+fetch 3: IR = 138 and AR = 7
+INAC16 instruction
+INAC16_1: AC = 2 AC8 = 2 flag = 0
+Instruction execution complete: AC = 2 AC8 = 2 R = 0 R8 = 0 flag = 0 AR = 7 PC = 7 DR = 138
+
+number of hits = 5
+number of misses = 2
+fetch 1: AR = 7 and PC = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+fetch 2: DR = 130 and PC = 8
+fetch 3: IR = 130 and AR = 8
+STAC16 instruction
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+STAC16_1: DR = 4 PC = 9 AR = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+STAC16_2: TR = 4 DR = 4 AR = 9 PC = 10
+STAC16_3: AR = 1028
+STAC16_4: DR = 0
+STAC16_5 before store of high order: AR = 1028 M[1028] = 0
+AR being sought from the cache = 1028
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 4 0 138 130
+AR being sought from the cache = 1028
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 1 data = 0 0 0 0
+Cache entry after being written to...
+entry 1 tag = 1 data = 0 0 0 0
+STAC16_5 after store of high order: AR = 1028 M[1028] = 0
+STAC16_6: AC8 = 2 DR = 2
+STAC16_7 before store of low order: AR = 1029 M[1029] = 0
+AR being sought from the cache = 1029
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 1 data = 0 0 0 0
+AR being sought from the cache = 1029
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 1 data = 0 0 0 0
+Cache entry after being written to...
+entry 1 tag = 1 data = 0 2 0 0
+STAC16_7 after store of low order: AR = 1029 M[1029] = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 0 R8 = 0 flag = 0 AR = 1029 PC = 10 DR = 2
+
+number of hits = 7
+number of misses = 3
+fetch 1: AR = 10 and PC = 10
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+fetch 2: DR = 138 and PC = 11
+fetch 3: IR = 138 and AR = 11
+INAC16 instruction
+INAC16_1: AC = 3 AC8 = 3 flag = 0
+Instruction execution complete: AC = 3 AC8 = 3 R = 0 R8 = 0 flag = 0 AR = 11 PC = 11 DR = 138
+
+number of hits = 8
+number of misses = 3
+fetch 1: AR = 11 and PC = 11
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+fetch 2: DR = 130 and PC = 12
+fetch 3: IR = 130 and AR = 12
+STAC16 instruction
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+STAC16_1: DR = 4 PC = 13 AR = 13
+AR being sought from the cache = 13
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+Cache Hit
+AR being sought from the cache = 13
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+STAC16_2: TR = 4 DR = 8 AR = 13 PC = 14
+STAC16_3: AR = 1032
+STAC16_4: DR = 0
+STAC16_5 before store of high order: AR = 1032 M[1032] = 0
+AR being sought from the cache = 1032
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 4 4 138 130
+AR being sought from the cache = 1032
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 1 data = 0 0 0 0
+Cache entry after being written to...
+entry 2 tag = 1 data = 0 0 0 0
+STAC16_5 after store of high order: AR = 1032 M[1032] = 0
+STAC16_6: AC8 = 3 DR = 3
+STAC16_7 before store of low order: AR = 1033 M[1033] = 0
+AR being sought from the cache = 1033
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 1 data = 0 0 0 0
+AR being sought from the cache = 1033
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 1 data = 0 0 0 0
+Cache entry after being written to...
+entry 2 tag = 1 data = 0 3 0 0
+STAC16_7 after store of low order: AR = 1033 M[1033] = 3
+Instruction execution complete: AC = 3 AC8 = 3 R = 0 R8 = 0 flag = 0 AR = 1033 PC = 14 DR = 3
+
+number of hits = 10
+number of misses = 4
+fetch 1: AR = 14 and PC = 14
+AR being sought from the cache = 14
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+Cache Hit
+AR being sought from the cache = 14
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+fetch 2: DR = 138 and PC = 15
+fetch 3: IR = 138 and AR = 15
+INAC16 instruction
+INAC16_1: AC = 4 AC8 = 4 flag = 0
+Instruction execution complete: AC = 4 AC8 = 4 R = 0 R8 = 0 flag = 0 AR = 15 PC = 15 DR = 138
+
+number of hits = 11
+number of misses = 4
+fetch 1: AR = 15 and PC = 15
+AR being sought from the cache = 15
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+Cache Hit
+AR being sought from the cache = 15
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 4 8 138 130
+fetch 2: DR = 130 and PC = 16
+fetch 3: IR = 130 and AR = 16
+STAC16 instruction
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+STAC16_1: DR = 4 PC = 17 AR = 17
+AR being sought from the cache = 17
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+Cache Hit
+AR being sought from the cache = 17
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+STAC16_2: TR = 4 DR = 8 AR = 17 PC = 18
+STAC16_3: AR = 1032
+STAC16_4: DR = 0
+STAC16_5 before store of high order: AR = 1032 M[1032] = 0
+AR being sought from the cache = 1032
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 1 data = 0 3 0 0
+AR being sought from the cache = 1032
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 1 data = 0 3 0 0
+Cache entry after being written to...
+entry 2 tag = 1 data = 0 3 0 0
+STAC16_5 after store of high order: AR = 1032 M[1032] = 0
+STAC16_6: AC8 = 4 DR = 4
+STAC16_7 before store of low order: AR = 1033 M[1033] = 0
+AR being sought from the cache = 1033
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 1 data = 0 3 0 0
+AR being sought from the cache = 1033
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 1 data = 0 3 0 0
+Cache entry after being written to...
+entry 2 tag = 1 data = 0 4 0 0
+STAC16_7 after store of low order: AR = 1033 M[1033] = 4
+Instruction execution complete: AC = 4 AC8 = 4 R = 0 R8 = 0 flag = 0 AR = 1033 PC = 18 DR = 4
+
+number of hits = 13
+number of misses = 5
+fetch 1: AR = 18 and PC = 18
+AR being sought from the cache = 18
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+Cache Hit
+AR being sought from the cache = 18
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+fetch 2: DR = 129 and PC = 19
+fetch 3: IR = 129 and AR = 19
+LDAC16 instruction
+AR being sought from the cache = 19
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+Cache Hit
+AR being sought from the cache = 19
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 4 8 129 4
+LDAC16_1: DR = 4 PC = 20 AR = 20
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+LDAC16_2: TR = 4 DR = 0 AR = 20 PC = 21
+LDAC16_3: AR = 1024
+AR being sought from the cache = 1024
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 1 data = 0 1 0 0
+Cache Hit
+AR being sought from the cache = 1024
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 1 data = 0 1 0 0
+LDAC16_4: DR = 0
+LDAC16_5: AC = 0
+AR being sought from the cache = 1025
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 1 data = 0 1 0 0
+Cache Hit
+AR being sought from the cache = 1025
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 1 data = 0 1 0 0
+LDAC16_6: DR = 1 AR = 1025
+LDAC16_7: AC8 = 1 AC = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 1025 PC = 21 DR = 1
+
+number of hits = 17
+number of misses = 6
+fetch 1: AR = 21 and PC = 21
+AR being sought from the cache = 21
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+Cache Hit
+AR being sought from the cache = 21
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+fetch 2: DR = 129 and PC = 22
+fetch 3: IR = 129 and AR = 22
+LDAC16 instruction
+AR being sought from the cache = 22
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+Cache Hit
+AR being sought from the cache = 22
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+LDAC16_1: DR = 4 PC = 23 AR = 23
+AR being sought from the cache = 23
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+Cache Hit
+AR being sought from the cache = 23
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 0 129 4 4
+LDAC16_2: TR = 4 DR = 4 AR = 23 PC = 24
+LDAC16_3: AR = 1028
+AR being sought from the cache = 1028
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 1 data = 0 2 0 0
+Cache Hit
+AR being sought from the cache = 1028
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 1 data = 0 2 0 0
+LDAC16_4: DR = 0
+LDAC16_5: AC = 0
+AR being sought from the cache = 1029
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 1 data = 0 2 0 0
+Cache Hit
+AR being sought from the cache = 1029
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 1 data = 0 2 0 0
+LDAC16_6: DR = 2 AR = 1029
+LDAC16_7: AC8 = 2 AC = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 0 R8 = 0 flag = 0 AR = 1029 PC = 24 DR = 2
+
+number of hits = 22
+number of misses = 6
+fetch 1: AR = 24 and PC = 24
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 255 0 0 0
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 255 0 0 0
+fetch 2: DR = 255 and PC = 25
+fetch 3: IR = 255 and AR = 25
+HALT instruction; STOP EXECUTION
+Instruction execution complete: AC = 2 AC8 = 2 R = 0 R8 = 0 flag = 0 AR = 25 PC = 25 DR = 255
+
+number of hits = 22
+number of misses = 7
+--- running again---
+ 
+Name: Ryan Jaskulski
+Description: rscpue with 1KB direct-mapped, write through, write allocate cache.
+
+Enter the name of the file:  The program located at /home/mathcs/turnin/bracken/cs330/test.6 has been properly opened; Dumping source to memory
+Memory has been initalized
+Initalizing the cache...
+Dumping source to memory
+End of file reached... BEGIN EXECUTION.
+BEGIN
+fetch 1: AR = 0 and PC = 0
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+fetch 2: DR = 0 and PC = 1
+fetch 3: IR = 0 and AR = 1
+NOP instruction
+Instruction execution complete: AC = 0 AC8 = 0 R = 0 R8 = 0 flag = 0 AR = 1 PC = 1 DR = 0
+
+number of hits = 0
+number of misses = 1
+fetch 1: AR = 1 and PC = 1
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+Cache Hit
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+fetch 2: DR = 22 and PC = 2
+fetch 3: IR = 22 and AR = 2
+MVI instruction
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+Cache Hit
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+MVI1: DR = 1 PC = 3 AR = 3
+MVI2: AC8 = 1 AC = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 0 R8 = 0 flag = 0 AR = 3 PC = 3 DR = 1
+
+number of hits = 2
+number of misses = 1
+fetch 1: AR = 3 and PC = 3
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+Cache Hit
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 22 1 10
+fetch 2: DR = 10 and PC = 4
+fetch 3: IR = 10 and AR = 4
+INAC instruction
+INAC1: AC8 = 2 AC = 2 flag = 0
+Instruction execution complete: AC = 2 AC8 = 2 R = 0 R8 = 0 flag = 0 AR = 4 PC = 4 DR = 10
+
+number of hits = 3
+number of misses = 1
+fetch 1: AR = 4 and PC = 4
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+fetch 2: DR = 3 and PC = 5
+fetch 3: IR = 3 and AR = 5
+MVAC instruction
+MVAC1: R8 = 2R = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 2 R8 = 2 flag = 0 AR = 5 PC = 5 DR = 3
+
+number of hits = 3
+number of misses = 2
+fetch 1: AR = 5 and PC = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+fetch 2: DR = 22 and PC = 6
+fetch 3: IR = 22 and AR = 6
+MVI instruction
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+MVI1: DR = 10 PC = 7 AR = 7
+MVI2: AC8 = 10 AC = 10
+Instruction execution complete: AC = 10 AC8 = 10 R = 2 R8 = 2 flag = 0 AR = 7 PC = 7 DR = 10
+
+number of hits = 5
+number of misses = 2
+fetch 1: AR = 7 and PC = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 3 22 10 8
+fetch 2: DR = 8 and PC = 8
+fetch 3: IR = 8 and AR = 8
+ADD instruction
+ADD1 AC = 12 AC = 12 flags = 0
+Instruction execution complete: AC = 12 AC8 = 12 R = 2 R8 = 2 flag = 0 AR = 8 PC = 8 DR = 8
+
+number of hits = 6
+number of misses = 2
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+fetch 2: DR = 10 and PC = 9
+fetch 3: IR = 10 and AR = 9
+INAC instruction
+INAC1: AC8 = 13 AC = 13 flag = 0
+Instruction execution complete: AC = 13 AC8 = 13 R = 2 R8 = 2 flag = 0 AR = 9 PC = 9 DR = 10
+
+number of hits = 6
+number of misses = 3
+fetch 1: AR = 9 and PC = 9
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+fetch 2: DR = 9 and PC = 10
+fetch 3: IR = 9 and AR = 10
+SUB instruction
+SUB1 AC8 = 11 AC = 11 flags = 2
+Instruction execution complete: AC = 11 AC8 = 11 R = 2 R8 = 2 flag = 2 AR = 10 PC = 10 DR = 9
+
+number of hits = 7
+number of misses = 3
+fetch 1: AR = 10 and PC = 10
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+fetch 2: DR = 22 and PC = 11
+fetch 3: IR = 22 and AR = 11
+MVI instruction
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 10 9 22 1
+MVI1: DR = 1 PC = 12 AR = 12
+MVI2: AC8 = 1 AC = 1
+Instruction execution complete: AC = 1 AC8 = 1 R = 2 R8 = 2 flag = 2 AR = 12 PC = 12 DR = 1
+
+number of hits = 9
+number of misses = 3
+fetch 1: AR = 12 and PC = 12
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+fetch 2: DR = 19 and PC = 13
+fetch 3: IR = 19 and AR = 13
+rr instruction
+RR1 AC8 = 128 AC = 128 flags = 14
+Instruction execution complete: AC = 128 AC8 = 128 R = 2 R8 = 2 flag = 14 AR = 13 PC = 13 DR = 19
+
+number of hits = 9
+number of misses = 4
+fetch 1: AR = 13 and PC = 13
+AR being sought from the cache = 13
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+Cache Hit
+AR being sought from the cache = 13
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+fetch 2: DR = 18 and PC = 14
+fetch 3: IR = 18 and AR = 14
+rl instruction
+RL1 AC8 = 1 AC = 1 flags = 6
+Instruction execution complete: AC = 1 AC8 = 1 R = 2 R8 = 2 flag = 6 AR = 14 PC = 14 DR = 18
+
+number of hits = 10
+number of misses = 4
+fetch 1: AR = 14 and PC = 14
+AR being sought from the cache = 14
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+Cache Hit
+AR being sought from the cache = 14
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+fetch 2: DR = 20 and PC = 15
+fetch 3: IR = 20 and AR = 15
+lsl instruction
+RSR1 AC8 = 2 AC = 2 flags = 0
+Instruction execution complete: AC = 2 AC8 = 2 R = 2 R8 = 2 flag = 0 AR = 15 PC = 15 DR = 20
+
+number of hits = 11
+number of misses = 4
+fetch 1: AR = 15 and PC = 15
+AR being sought from the cache = 15
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+Cache Hit
+AR being sought from the cache = 15
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 19 18 20 21
+fetch 2: DR = 21 and PC = 16
+fetch 3: IR = 21 and AR = 16
+lsr instruction
+LSR1 AC8 = 1 AC = 1 flags = 0
+Instruction execution complete: AC = 1 AC8 = 1 R = 2 R8 = 2 flag = 0 AR = 16 PC = 16 DR = 21
+
+number of hits = 12
+number of misses = 4
+fetch 1: AR = 16 and PC = 16
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+fetch 2: DR = 22 and PC = 17
+fetch 3: IR = 22 and AR = 17
+MVI instruction
+AR being sought from the cache = 17
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+Cache Hit
+AR being sought from the cache = 17
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+MVI1: DR = 15 PC = 18 AR = 18
+MVI2: AC8 = 15 AC = 15
+Instruction execution complete: AC = 15 AC8 = 15 R = 2 R8 = 2 flag = 0 AR = 18 PC = 18 DR = 15
+
+number of hits = 13
+number of misses = 5
+fetch 1: AR = 18 and PC = 18
+AR being sought from the cache = 18
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+Cache Hit
+AR being sought from the cache = 18
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+fetch 2: DR = 3 and PC = 19
+fetch 3: IR = 3 and AR = 19
+MVAC instruction
+MVAC1: R8 = 15R = 15
+Instruction execution complete: AC = 15 AC8 = 15 R = 15 R8 = 15 flag = 0 AR = 19 PC = 19 DR = 3
+
+number of hits = 14
+number of misses = 5
+fetch 1: AR = 19 and PC = 19
+AR being sought from the cache = 19
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+Cache Hit
+AR being sought from the cache = 19
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 22 15 3 22
+fetch 2: DR = 22 and PC = 20
+fetch 3: IR = 22 and AR = 20
+MVI instruction
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+MVI1: DR = 240 PC = 21 AR = 21
+MVI2: AC8 = 240 AC = 240
+Instruction execution complete: AC = 240 AC8 = 240 R = 15 R8 = 15 flag = 0 AR = 21 PC = 21 DR = 240
+
+number of hits = 15
+number of misses = 6
+fetch 1: AR = 21 and PC = 21
+AR being sought from the cache = 21
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+Cache Hit
+AR being sought from the cache = 21
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+fetch 2: DR = 13 and PC = 22
+fetch 3: IR = 13 and AR = 22
+OR instruction
+OR1 AC8 = 255 AC = 255 flags = 8
+Instruction execution complete: AC = 255 AC8 = 255 R = 15 R8 = 15 flag = 8 AR = 22 PC = 22 DR = 13
+
+number of hits = 16
+number of misses = 6
+fetch 1: AR = 22 and PC = 22
+AR being sought from the cache = 22
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+Cache Hit
+AR being sought from the cache = 22
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+fetch 2: DR = 14 and PC = 23
+fetch 3: IR = 14 and AR = 23
+XOR instruction
+XOR1 AC8 = 240 AC = 240 flags = 8
+Instruction execution complete: AC = 240 AC8 = 240 R = 15 R8 = 15 flag = 8 AR = 23 PC = 23 DR = 14
+
+number of hits = 17
+number of misses = 6
+fetch 1: AR = 23 and PC = 23
+AR being sought from the cache = 23
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+Cache Hit
+AR being sought from the cache = 23
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 240 13 14 22
+fetch 2: DR = 22 and PC = 24
+fetch 3: IR = 22 and AR = 24
+MVI instruction
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+MVI1: DR = 15 PC = 25 AR = 25
+MVI2: AC8 = 15 AC = 15
+Instruction execution complete: AC = 15 AC8 = 15 R = 15 R8 = 15 flag = 8 AR = 25 PC = 25 DR = 15
+
+number of hits = 18
+number of misses = 7
+fetch 1: AR = 25 and PC = 25
+AR being sought from the cache = 25
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+Cache Hit
+AR being sought from the cache = 25
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+fetch 2: DR = 3 and PC = 26
+fetch 3: IR = 3 and AR = 26
+MVAC instruction
+MVAC1: R8 = 15R = 15
+Instruction execution complete: AC = 15 AC8 = 15 R = 15 R8 = 15 flag = 8 AR = 26 PC = 26 DR = 3
+
+number of hits = 19
+number of misses = 7
+fetch 1: AR = 26 and PC = 26
+AR being sought from the cache = 26
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+Cache Hit
+AR being sought from the cache = 26
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+fetch 2: DR = 12 and PC = 27
+fetch 3: IR = 12 and AR = 27
+AND instruction
+AND1 AC8 = 15 AC = 15 flags = 0
+Instruction execution complete: AC = 15 AC8 = 15 R = 15 R8 = 15 flag = 0 AR = 27 PC = 27 DR = 12
+
+number of hits = 20
+number of misses = 7
+fetch 1: AR = 27 and PC = 27
+AR being sought from the cache = 27
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+Cache Hit
+AR being sought from the cache = 27
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 15 3 12 255
+fetch 2: DR = 255 and PC = 28
+fetch 3: IR = 255 and AR = 28
+HALT instruction; STOP EXECUTION
+Instruction execution complete: AC = 15 AC8 = 15 R = 15 R8 = 15 flag = 0 AR = 28 PC = 28 DR = 255
+
+number of hits = 21
+number of misses = 7
+--- running again---
+ 
+Name: Ryan Jaskulski
+Description: rscpue with 1KB direct-mapped, write through, write allocate cache.
+
+Enter the name of the file:  The program located at /home/mathcs/turnin/bracken/cs330/test.7 has been properly opened; Dumping source to memory
+Memory has been initalized
+Initalizing the cache...
+Dumping source to memory
+End of file reached... BEGIN EXECUTION.
+BEGIN
+fetch 1: AR = 0 and PC = 0
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+fetch 2: DR = 0 and PC = 1
+fetch 3: IR = 0 and AR = 1
+NOP instruction
+Instruction execution complete: AC = 0 AC8 = 0 R = 0 R8 = 0 flag = 0 AR = 1 PC = 1 DR = 0
+
+number of hits = 0
+number of misses = 1
+fetch 1: AR = 1 and PC = 1
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+Cache Hit
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+fetch 2: DR = 129 and PC = 2
+fetch 3: IR = 129 and AR = 2
+LDAC16 instruction
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+Cache Hit
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+LDAC16_1: DR = 0 PC = 3 AR = 3
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+Cache Hit
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 0 129 0 41
+LDAC16_2: TR = 0 DR = 41 AR = 3 PC = 4
+LDAC16_3: AR = 41
+AR being sought from the cache = 41
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 41
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+AR being sought from the cache = 41
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+LDAC16_4: DR = 0
+LDAC16_5: AC = 0
+AR being sought from the cache = 42
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+Cache Hit
+AR being sought from the cache = 42
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+LDAC16_6: DR = 2 AR = 42
+LDAC16_7: AC8 = 2 AC = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 0 R8 = 0 flag = 0 AR = 42 PC = 4 DR = 2
+
+number of hits = 4
+number of misses = 2
+fetch 1: AR = 4 and PC = 4
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+fetch 2: DR = 131 and PC = 5
+fetch 3: IR = 131 and AR = 5
+MVAC16 instruction
+MVAC16_1: R = 2 R8 = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 2 R8 = 2 flag = 0 AR = 5 PC = 5 DR = 131
+
+number of hits = 4
+number of misses = 3
+fetch 1: AR = 5 and PC = 5
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+fetch 2: DR = 136 and PC = 6
+fetch 3: IR = 136 and AR = 6
+ADD16 instruction
+ADD16_1 AC = 4 AC8 = 4 flags = 0
+Instruction execution complete: AC = 4 AC8 = 4 R = 2 R8 = 2 flag = 0 AR = 6 PC = 6 DR = 136
+
+number of hits = 5
+number of misses = 3
+fetch 1: AR = 6 and PC = 6
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+fetch 2: DR = 137 and PC = 7
+fetch 3: IR = 137 and AR = 7
+SUB16 instruction
+SUB16_1 AC = 2 AC8 = 2 flags = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 2 R8 = 2 flag = 2 AR = 7 PC = 7 DR = 137
+
+number of hits = 6
+number of misses = 3
+fetch 1: AR = 7 and PC = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 131 136 137 138
+fetch 2: DR = 138 and PC = 8
+fetch 3: IR = 138 and AR = 8
+INAC16 instruction
+INAC16_1: AC = 3 AC8 = 3 flag = 0
+Instruction execution complete: AC = 3 AC8 = 3 R = 2 R8 = 2 flag = 0 AR = 8 PC = 8 DR = 138
+
+number of hits = 7
+number of misses = 3
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+fetch 2: DR = 130 and PC = 9
+fetch 3: IR = 130 and AR = 9
+STAC16 instruction
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+Cache Hit
+AR being sought from the cache = 9
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+STAC16_1: DR = 0 PC = 10 AR = 10
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+Cache Hit
+AR being sought from the cache = 10
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+STAC16_2: TR = 0 DR = 46 AR = 10 PC = 11
+STAC16_3: AR = 46
+STAC16_4: DR = 0
+STAC16_5 before store of high order: AR = 46 M[46] = 0
+AR being sought from the cache = 46
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 255 data = 0 0 0 0
+AR being sought from the cache = 46
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 0
+Cache entry after being written to...
+entry 11 tag = 0 data = 255 128 0 0
+STAC16_5 after store of high order: AR = 46 M[46] = 0
+STAC16_6: AC8 = 3 DR = 3
+STAC16_7 before store of low order: AR = 47 M[47] = 0
+AR being sought from the cache = 47
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 0
+AR being sought from the cache = 47
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 0
+Cache entry after being written to...
+entry 11 tag = 0 data = 255 128 0 3
+STAC16_7 after store of low order: AR = 47 M[47] = 3
+Instruction execution complete: AC = 3 AC8 = 3 R = 2 R8 = 2 flag = 0 AR = 47 PC = 11 DR = 3
+
+number of hits = 9
+number of misses = 4
+fetch 1: AR = 11 and PC = 11
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+Cache Hit
+AR being sought from the cache = 11
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 130 0 46 139
+fetch 2: DR = 139 and PC = 12
+fetch 3: IR = 139 and AR = 12
+CLAC16 instruction
+CLAC16_1: AC = 0AC8 = 0 flag = 1
+Instruction execution complete: AC = 0 AC8 = 0 R = 2 R8 = 2 flag = 1 AR = 12 PC = 12 DR = 139
+
+number of hits = 10
+number of misses = 4
+fetch 1: AR = 12 and PC = 12
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+AR being sought from the cache = 12
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+fetch 2: DR = 140 and PC = 13
+fetch 3: IR = 140 and AR = 13
+AND instruction
+AND16_1 AC = 0 AC8 = 0 flags = 1
+Instruction execution complete: AC = 0 AC8 = 0 R = 2 R8 = 2 flag = 1 AR = 13 PC = 13 DR = 140
+
+number of hits = 10
+number of misses = 5
+fetch 1: AR = 13 and PC = 13
+AR being sought from the cache = 13
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+Cache Hit
+AR being sought from the cache = 13
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+fetch 2: DR = 141 and PC = 14
+fetch 3: IR = 141 and AR = 14
+OR16 instruction
+OR16_1 AC = 2 AC8 = 2 flags = 0
+Instruction execution complete: AC = 2 AC8 = 2 R = 2 R8 = 2 flag = 0 AR = 14 PC = 14 DR = 141
+
+number of hits = 11
+number of misses = 5
+fetch 1: AR = 14 and PC = 14
+AR being sought from the cache = 14
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+Cache Hit
+AR being sought from the cache = 14
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+fetch 2: DR = 137 and PC = 15
+fetch 3: IR = 137 and AR = 15
+SUB16 instruction
+SUB16_1 AC = 0 AC8 = 0 flags = 3
+Instruction execution complete: AC = 0 AC8 = 0 R = 2 R8 = 2 flag = 3 AR = 15 PC = 15 DR = 137
+
+number of hits = 12
+number of misses = 5
+fetch 1: AR = 15 and PC = 15
+AR being sought from the cache = 15
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+Cache Hit
+AR being sought from the cache = 15
+The main memory block number = 3
+The cache line associated with AR = 3
+entry 3 tag = 0 data = 140 141 137 142
+fetch 2: DR = 142 and PC = 16
+fetch 3: IR = 142 and AR = 16
+XOR16 instruction
+XOR16_1 AC = 2 AC8 = 2 flags = 2
+Instruction execution complete: AC = 2 AC8 = 2 R = 2 R8 = 2 flag = 2 AR = 16 PC = 16 DR = 142
+
+number of hits = 13
+number of misses = 5
+fetch 1: AR = 16 and PC = 16
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+AR being sought from the cache = 16
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+fetch 2: DR = 138 and PC = 17
+fetch 3: IR = 138 and AR = 17
+INAC16 instruction
+INAC16_1: AC = 3 AC8 = 3 flag = 0
+Instruction execution complete: AC = 3 AC8 = 3 R = 2 R8 = 2 flag = 0 AR = 17 PC = 17 DR = 138
+
+number of hits = 13
+number of misses = 6
+fetch 1: AR = 17 and PC = 17
+AR being sought from the cache = 17
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+Cache Hit
+AR being sought from the cache = 17
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+fetch 2: DR = 143 and PC = 18
+fetch 3: IR = 143 and AR = 18
+NOT16 instruction
+NOT16_1 AC = -4 AC8 = 252 flags = 8
+Instruction execution complete: AC = 65532 AC8 = 252 R = 2 R8 = 2 flag = 8 AR = 18 PC = 18 DR = 143
+
+number of hits = 14
+number of misses = 6
+fetch 1: AR = 18 and PC = 18
+AR being sought from the cache = 18
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+Cache Hit
+AR being sought from the cache = 18
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+fetch 2: DR = 139 and PC = 19
+fetch 3: IR = 139 and AR = 19
+CLAC16 instruction
+CLAC16_1: AC = 0AC8 = 0 flag = 1
+Instruction execution complete: AC = 0 AC8 = 0 R = 2 R8 = 2 flag = 1 AR = 19 PC = 19 DR = 139
+
+number of hits = 15
+number of misses = 6
+fetch 1: AR = 19 and PC = 19
+AR being sought from the cache = 19
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+Cache Hit
+AR being sought from the cache = 19
+The main memory block number = 4
+The cache line associated with AR = 4
+entry 4 tag = 0 data = 138 143 139 138
+fetch 2: DR = 138 and PC = 20
+fetch 3: IR = 138 and AR = 20
+INAC16 instruction
+INAC16_1: AC = 1 AC8 = 1 flag = 0
+Instruction execution complete: AC = 1 AC8 = 1 R = 2 R8 = 2 flag = 0 AR = 20 PC = 20 DR = 138
+
+number of hits = 16
+number of misses = 6
+fetch 1: AR = 20 and PC = 20
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+AR being sought from the cache = 20
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+fetch 2: DR = 148 and PC = 21
+fetch 3: IR = 148 and AR = 21
+lsl16 instruction
+RSR16_1 AC = 2 AC8 = 2 flags = 0
+Instruction execution complete: AC = 2 AC8 = 2 R = 2 R8 = 2 flag = 0 AR = 21 PC = 21 DR = 148
+
+number of hits = 16
+number of misses = 7
+fetch 1: AR = 21 and PC = 21
+AR being sought from the cache = 21
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+Cache Hit
+AR being sought from the cache = 21
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+fetch 2: DR = 149 and PC = 22
+fetch 3: IR = 149 and AR = 22
+lsr16 instruction
+LSR16_1 AC = 1 AC8 = 1 flags = 0
+Instruction execution complete: AC = 1 AC8 = 1 R = 2 R8 = 2 flag = 0 AR = 22 PC = 22 DR = 149
+
+number of hits = 17
+number of misses = 7
+fetch 1: AR = 22 and PC = 22
+AR being sought from the cache = 22
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+Cache Hit
+AR being sought from the cache = 22
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+fetch 2: DR = 147 and PC = 23
+fetch 3: IR = 147 and AR = 23
+rr16 instruction
+RR16_1 AC = -32768 AC8 = 0 flags = 14
+Instruction execution complete: AC = 32768 AC8 = 0 R = 2 R8 = 2 flag = 14 AR = 23 PC = 23 DR = 147
+
+number of hits = 18
+number of misses = 7
+fetch 1: AR = 23 and PC = 23
+AR being sought from the cache = 23
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+Cache Hit
+AR being sought from the cache = 23
+The main memory block number = 5
+The cache line associated with AR = 5
+entry 5 tag = 0 data = 148 149 147 146
+fetch 2: DR = 146 and PC = 24
+fetch 3: IR = 146 and AR = 24
+rl16 instruction
+RL16_1 AC = 1AC8 = 1 flags = 6
+Instruction execution complete: AC = 1 AC8 = 1 R = 2 R8 = 2 flag = 6 AR = 24 PC = 24 DR = 146
+
+number of hits = 19
+number of misses = 7
+fetch 1: AR = 24 and PC = 24
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+AR being sought from the cache = 24
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+fetch 2: DR = 129 and PC = 25
+fetch 3: IR = 129 and AR = 25
+LDAC16 instruction
+AR being sought from the cache = 25
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+Cache Hit
+AR being sought from the cache = 25
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+LDAC16_1: DR = 0 PC = 26 AR = 26
+AR being sought from the cache = 26
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+Cache Hit
+AR being sought from the cache = 26
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+LDAC16_2: TR = 0 DR = 43 AR = 26 PC = 27
+LDAC16_3: AR = 43
+AR being sought from the cache = 43
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+Cache Hit
+AR being sought from the cache = 43
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+LDAC16_4: DR = 127
+LDAC16_5: AC = 127
+AR being sought from the cache = 44
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 3
+Cache Hit
+AR being sought from the cache = 44
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 3
+LDAC16_6: DR = 255 AR = 44
+LDAC16_7: AC8 = 255 AC = 32767
+Instruction execution complete: AC = 32767 AC8 = 255 R = 2 R8 = 2 flag = 6 AR = 44 PC = 27 DR = 255
+
+number of hits = 23
+number of misses = 8
+fetch 1: AR = 27 and PC = 27
+AR being sought from the cache = 27
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+Cache Hit
+AR being sought from the cache = 27
+The main memory block number = 6
+The cache line associated with AR = 6
+entry 6 tag = 0 data = 129 0 43 131
+fetch 2: DR = 131 and PC = 28
+fetch 3: IR = 131 and AR = 28
+MVAC16 instruction
+MVAC16_1: R = 32767 R8 = 255
+Instruction execution complete: AC = 32767 AC8 = 255 R = 32767 R8 = 255 flag = 6 AR = 28 PC = 28 DR = 131
+
+number of hits = 24
+number of misses = 8
+fetch 1: AR = 28 and PC = 28
+AR being sought from the cache = 28
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 28
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+AR being sought from the cache = 28
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+fetch 2: DR = 139 and PC = 29
+fetch 3: IR = 139 and AR = 29
+CLAC16 instruction
+CLAC16_1: AC = 0AC8 = 0 flag = 1
+Instruction execution complete: AC = 0 AC8 = 0 R = 32767 R8 = 255 flag = 1 AR = 29 PC = 29 DR = 139
+
+number of hits = 24
+number of misses = 9
+fetch 1: AR = 29 and PC = 29
+AR being sought from the cache = 29
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+Cache Hit
+AR being sought from the cache = 29
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+fetch 2: DR = 138 and PC = 30
+fetch 3: IR = 138 and AR = 30
+INAC16 instruction
+INAC16_1: AC = 1 AC8 = 1 flag = 0
+Instruction execution complete: AC = 1 AC8 = 1 R = 32767 R8 = 255 flag = 0 AR = 30 PC = 30 DR = 138
+
+number of hits = 25
+number of misses = 9
+fetch 1: AR = 30 and PC = 30
+AR being sought from the cache = 30
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+Cache Hit
+AR being sought from the cache = 30
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+fetch 2: DR = 136 and PC = 31
+fetch 3: IR = 136 and AR = 31
+ADD16 instruction
+ADD16_1 AC = -32768 AC8 = 0 flags = 12
+Instruction execution complete: AC = 32768 AC8 = 0 R = 32767 R8 = 255 flag = 12 AR = 31 PC = 31 DR = 136
+
+number of hits = 26
+number of misses = 9
+fetch 1: AR = 31 and PC = 31
+AR being sought from the cache = 31
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+Cache Hit
+AR being sought from the cache = 31
+The main memory block number = 7
+The cache line associated with AR = 7
+entry 7 tag = 0 data = 139 138 136 137
+fetch 2: DR = 137 and PC = 32
+fetch 3: IR = 137 and AR = 32
+SUB16 instruction
+SUB16_1 AC = 1 AC8 = 1 flags = 6
+Instruction execution complete: AC = 1 AC8 = 1 R = 32767 R8 = 255 flag = 6 AR = 32 PC = 32 DR = 137
+
+number of hits = 27
+number of misses = 9
+fetch 1: AR = 32 and PC = 32
+AR being sought from the cache = 32
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 32
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+AR being sought from the cache = 32
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+fetch 2: DR = 129 and PC = 33
+fetch 3: IR = 129 and AR = 33
+LDAC16 instruction
+AR being sought from the cache = 33
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+Cache Hit
+AR being sought from the cache = 33
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+LDAC16_1: DR = 0 PC = 34 AR = 34
+AR being sought from the cache = 34
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+Cache Hit
+AR being sought from the cache = 34
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+LDAC16_2: TR = 0 DR = 43 AR = 34 PC = 35
+LDAC16_3: AR = 43
+AR being sought from the cache = 43
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+Cache Hit
+AR being sought from the cache = 43
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+LDAC16_4: DR = 127
+LDAC16_5: AC = 127
+AR being sought from the cache = 44
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 3
+Cache Hit
+AR being sought from the cache = 44
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 3
+LDAC16_6: DR = 255 AR = 44
+LDAC16_7: AC8 = 255 AC = 32767
+Instruction execution complete: AC = 32767 AC8 = 255 R = 32767 R8 = 255 flag = 6 AR = 44 PC = 35 DR = 255
+
+number of hits = 31
+number of misses = 10
+fetch 1: AR = 35 and PC = 35
+AR being sought from the cache = 35
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+Cache Hit
+AR being sought from the cache = 35
+The main memory block number = 8
+The cache line associated with AR = 8
+entry 8 tag = 0 data = 129 0 43 1
+fetch 2: DR = 1 and PC = 36
+fetch 3: IR = 1 and AR = 36
+LDAC instruction
+AR being sought from the cache = 36
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 36
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+AR being sought from the cache = 36
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+LDAC1: DR = 0 PC = 37 AR = 37
+AR being sought from the cache = 37
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+Cache Hit
+AR being sought from the cache = 37
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+LDAC2: TR = 0 DR = 45 AR = 37 PC = 38
+LDAC3: AR = 45
+AR being sought from the cache = 45
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 3
+Cache Hit
+AR being sought from the cache = 45
+The main memory block number = 11
+The cache line associated with AR = 11
+entry 11 tag = 0 data = 255 128 0 3
+LDAC4: DR = 128
+LDAC5: AC8 = 128 AC = 32640
+Instruction execution complete: AC = 32640 AC8 = 128 R = 32767 R8 = 255 flag = 6 AR = 45 PC = 38 DR = 128
+
+number of hits = 34
+number of misses = 11
+fetch 1: AR = 38 and PC = 38
+AR being sought from the cache = 38
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+Cache Hit
+AR being sought from the cache = 38
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+fetch 2: DR = 8 and PC = 39
+fetch 3: IR = 8 and AR = 39
+ADD instruction
+ADD1 AC = 127 AC = 32639 flags = 6
+Instruction execution complete: AC = 32639 AC8 = 127 R = 32767 R8 = 255 flag = 6 AR = 39 PC = 39 DR = 8
+
+number of hits = 35
+number of misses = 11
+fetch 1: AR = 39 and PC = 39
+AR being sought from the cache = 39
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+Cache Hit
+AR being sought from the cache = 39
+The main memory block number = 9
+The cache line associated with AR = 9
+entry 9 tag = 0 data = 0 45 8 11
+fetch 2: DR = 11 and PC = 40
+fetch 3: IR = 11 and AR = 40
+CLAC instruction
+CLAC1: AC8 = 0 AC = 32512 flag = 1
+Instruction execution complete: AC = 32512 AC8 = 0 R = 32767 R8 = 255 flag = 1 AR = 40 PC = 40 DR = 11
+
+number of hits = 36
+number of misses = 11
+fetch 1: AR = 40 and PC = 40
+AR being sought from the cache = 40
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+Cache Hit
+AR being sought from the cache = 40
+The main memory block number = 10
+The cache line associated with AR = 10
+entry 10 tag = 0 data = 255 0 2 127
+fetch 2: DR = 255 and PC = 41
+fetch 3: IR = 255 and AR = 41
+HALT instruction; STOP EXECUTION
+Instruction execution complete: AC = 32512 AC8 = 0 R = 32767 R8 = 255 flag = 1 AR = 41 PC = 41 DR = 255
+
+number of hits = 37
+number of misses = 11
+--- running again---
+ 
+Name: Ryan Jaskulski
+Description: rscpue with 1KB direct-mapped, write through, write allocate cache.
+
+Enter the name of the file:  The program located at /home/mathcs/turnin/bracken/cs330/dummy has been properly opened; Dumping source to memory
+Memory has been initalized
+Initalizing the cache...
+Dumping source to memory
+End of file reached... BEGIN EXECUTION.
+BEGIN
+fetch 1: AR = 0 and PC = 0
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+AR being sought from the cache = 0
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+fetch 2: DR = 150 and PC = 1
+fetch 3: IR = 150 and AR = 1
+MVI16 instruction
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+Cache Hit
+AR being sought from the cache = 1
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+MVI16_1: DR = 255 PC = 2 AR = 2
+MVI16_2: AC = 255
+MVI16_3: AC = -256
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+Cache Hit
+AR being sought from the cache = 2
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+MVI16_4: DR = 255 PC = 3 AR = 3
+MVI16_5: AC8 = 255
+MVI16_6: AC = -1
+Instruction execution complete: AC = 65535 AC8 = 255 R = 0 R8 = 0 flag = 0 AR = 3 PC = 3 DR = 255
+
+number of hits = 2
+number of misses = 1
+fetch 1: AR = 3 and PC = 3
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+Cache Hit
+AR being sought from the cache = 3
+The main memory block number = 0
+The cache line associated with AR = 0
+entry 0 tag = 0 data = 150 255 255 131
+fetch 2: DR = 131 and PC = 4
+fetch 3: IR = 131 and AR = 4
+MVAC16 instruction
+MVAC16_1: R = -1 R8 = 255
+Instruction execution complete: AC = 65535 AC8 = 255 R = 65535 R8 = 255 flag = 0 AR = 4 PC = 4 DR = 131
+
+number of hits = 3
+number of misses = 1
+fetch 1: AR = 4 and PC = 4
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+AR being sought from the cache = 4
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+fetch 2: DR = 150 and PC = 5
+fetch 3: IR = 150 and AR = 5
+MVI16 instruction
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+Cache Hit
+AR being sought from the cache = 5
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+MVI16_1: DR = 128 PC = 6 AR = 6
+MVI16_2: AC = 128
+MVI16_3: AC = -32768
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+Cache Hit
+AR being sought from the cache = 6
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+MVI16_4: DR = 0 PC = 7 AR = 7
+MVI16_5: AC8 = 0
+MVI16_6: AC = -32768
+Instruction execution complete: AC = 32768 AC8 = 0 R = 65535 R8 = 255 flag = 0 AR = 7 PC = 7 DR = 0
+
+number of hits = 5
+number of misses = 2
+fetch 1: AR = 7 and PC = 7
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+Cache Hit
+AR being sought from the cache = 7
+The main memory block number = 1
+The cache line associated with AR = 1
+entry 1 tag = 0 data = 150 128 0 136
+fetch 2: DR = 136 and PC = 8
+fetch 3: IR = 136 and AR = 8
+ADD16 instruction
+ADD16_1 AC = 32767 AC8 = 255 flags = 6
+Instruction execution complete: AC = 32767 AC8 = 255 R = 65535 R8 = 255 flag = 6 AR = 8 PC = 8 DR = 136
+
+number of hits = 6
+number of misses = 2
+fetch 1: AR = 8 and PC = 8
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 255 data = 0 0 0 0
+Cache Miss
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 255 0 0 0
+AR being sought from the cache = 8
+The main memory block number = 2
+The cache line associated with AR = 2
+entry 2 tag = 0 data = 255 0 0 0
+fetch 2: DR = 255 and PC = 9
+fetch 3: IR = 255 and AR = 9
+HALT instruction; STOP EXECUTION
+Instruction execution complete: AC = 32767 AC8 = 255 R = 65535 R8 = 255 flag = 6 AR = 9 PC = 9 DR = 255
+
+number of hits = 6
+number of misses = 3
